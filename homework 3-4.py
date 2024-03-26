@@ -17,9 +17,11 @@ def get_upcoming_birthdays(users):
         elif days_until_birthday == 1 and today.weekday() == 6:
             days_until_birthday = 2
         
+
         if 0 < days_until_birthday <=7:
             congratulation_date = today + timedelta(days=days_until_birthday)
             upcoming_birthdays.append({"name": user["name"], "congratulation_date": congratulation_date.strftime("%Y.%m.%d")})
+        
         return upcoming_birthdays
     
 users = [
