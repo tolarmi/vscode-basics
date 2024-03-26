@@ -1,6 +1,6 @@
 import random
 def get_numbers_ticket(min, max, quantity):
-    if not (1 <= min_num <= max_num <=1000) or quantity < 0:
+    if not (1 <= min <= max <=1000) or quantity < 0:
         print("Неправильне число.")
         return[]
     numbers_set = set()
