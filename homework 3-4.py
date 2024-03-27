@@ -22,7 +22,7 @@ def get_upcoming_birthdays(users):
             congratulation_date = today + timedelta(days=days_until_birthday)
             upcoming_birthdays.append({"name": user["name"], "congratulation_date": congratulation_date.strftime("%Y.%m.%d")})
         
-        return upcoming_birthdays
+    return upcoming_birthdays
     
 users = [
     {"name": "John Doe", "birthday": "1985.01.23"},
